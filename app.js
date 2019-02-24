@@ -63,8 +63,8 @@ app.post('/', function (req, res) {
   });
 
 })
-app.listen(port, function () {
+app.listen(process.env.PORT || 3000, function () {
 
-    console.log('Example app listening on port'+ port)
+    console.log('Example app listening on port', process.env.PORT || 3000)
   
   })
